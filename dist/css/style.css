@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #888;
+    margin-top: 10px;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    color: #fff;
+    outline: none;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #ffcc00;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-info h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffcc00;
+}
+
+.movie-info p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    #searchInput {
+        font-size: 16px;
+    }
+
+    .movie {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #searchInput {
+        font-size: 14px;
+    }
+
+    .movie {
+        width: 120px;
+    }
+
+    .movie-info h3 {
+        font-size: 16px;
+    }
+
+    .movie-info p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #searchInput {
+        font-size: 20px;
+    }
+
+    .movie {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .movie-info h3 {
+        font-size: 20px;
+    }
+}

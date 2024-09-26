@@ -1,0 +1,19 @@
+.movie-card {
+  background-color: $card-bg;
+  border: 1px solid $card-border;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 4px 10px $box-shadow-color;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+}

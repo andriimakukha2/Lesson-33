@@ -1,0 +1,15 @@
+$primary-bg: #333;
+$primary-text: white;
+$secondary-bg: #f0f0f0;
+$card-border: #ddd;
+$card-bg: #fff;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/header';
+@import 'components/movie-card';
+
+@import 'layout/container';
+@import 'layout/media';
